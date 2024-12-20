@@ -1,0 +1,281 @@
+.container {
+  width: 100%;
+  display: flex;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+.social-icons a {
+  margin: 20px;
+  font-size: 25px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.pdp {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 200px;
+  margin-top: 20px;
+  margin-left: 13px;
+}
+
+.element-link ul {
+  margin-top: 50px;
+  list-style-type: none;
+}
+.element-link li a {
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+  line-height: 30px;
+}
+.element-link a:hover,
+.element-link a:active {
+  color: rgb(123, 39, 151);
+  border-bottom: 3px solid rgb(140, 21, 170);
+}
+.element-link li:not(:first-child) {
+  margin-top: 20px;
+}
+
+.bloc-navigation {
+  background-color: rgb(227, 236, 236);
+  width: 230px;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.page {
+  margin-left: 230px;
+  padding-left: 45px;
+}
+
+.home-page {
+  width: 95%;
+  border: 1px solid grey;
+  border-radius: 20px 20px;
+  height: 95vh;
+  margin-top: 20px;
+}
+.home-page h1 {
+  font-size: 70px;
+  text-align: center;
+  margin-top: 100px;
+  color: rgb(46, 42, 42);
+}
+.home-page h3 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 100px;
+  color: rgb(46, 42, 42);
+}
+
+.about-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  background: white;
+  color: rgb(36, 31, 31);
+}
+.about-page h2 span {
+  color: grey;
+  text-shadow: 0 0 50px grey;
+}
+
+.about-img {
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.about-img img {
+  position: relative;
+  width: 32vw;
+  border-radius: 50%;
+  box-shadow: 0 0 25px grey;
+  top: 1rem;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.about-img img:hover {
+  box-shadow: 0 0 50px grey, 0 0 100px grey;
+}
+
+.heading {
+  text-align: center;
+  font-size: 8rem;
+}
+
+.about-content h2 {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.about-content h3 {
+  font-size: 2.6rem;
+}
+
+.about-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+
+.about-content .text-animation span::before {
+  content: "web Designer";
+  color: grey;
+  animation: words 20s infinite;
+}
+
+.skills-page {
+  width: 500px;
+  height: 100vh;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+}
+.skills-page h1 {
+  text-align: center;
+  font-size: 50px;
+}
+.skills-page h3 {
+  margin: 5px;
+}
+
+.skills-page li {
+  margin: 50px 0;
+  padding: 10px;
+  margin-left: 50px;
+}
+
+.bar {
+  background: #353b48;
+  display: block;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.bar:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.bar span {
+  height: 20px;
+  float: left;
+  background: linear-gradient(135deg, rgb(155, 158, 163) 0%, rgb(181, 192, 199) 100%);
+}
+
+.html {
+  width: 90%;
+  animation: html 3s;
+}
+
+.css {
+  width: 70%;
+  animation: css 3s;
+}
+
+.php {
+  width: 45%;
+  animation: php 3s;
+}
+
+.javascript {
+  width: 60%;
+  animation: javascript 3s;
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes php {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 45%;
+  }
+}
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+.work-page {
+  height: 100vh;
+}
+
+.contact-page {
+  height: 100vh;
+}
+
+.contact-page h2 {
+  margin-bottom: 3rem;
+  color: black;
+}
+
+.contact-page form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-page form .input-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-page form .input-box input,
+.contact-page form textarea {
+  width: 90%;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  color: rgba(34, 31, 31, 0.658);
+  background: rgb(227, 236, 236);
+  border-radius: 0.8rem;
+  border: 2px solid grey;
+  margin: 1rem 0;
+  resize: none;
+}
+
+.contact-page form .btn {
+  margin-top: 1rem;
+  background: rgb(227, 236, 236);
+  border-radius: 50px;
+  border: 1px solid rgb(19, 18, 18);
+}
+
+/*# sourceMappingURL=style.css.map */

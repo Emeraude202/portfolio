@@ -1,0 +1,6 @@
+@mixin font-style($fs, $ta, $mt, $clr){
+            font-size: $fs;
+            text-align: $ta;
+            margin-top: $mt;
+            color: $clr;
+}
